@@ -3,6 +3,7 @@ def letters_in_the_text(text):
     result = ""
     for i in text:
         if i.isalpha():
+            i = i.lower()
             if i in letters:
                 letters[i] += 1
             else:
